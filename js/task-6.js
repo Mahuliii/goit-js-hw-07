@@ -31,7 +31,7 @@ createBtn.addEventListener("click", () => {
   }
   destroyBoxes();
   const boxes = createBoxes(amount);
-  boxes.forEach((box) => boxesContainer.appendChild(box));
+  boxesContainer.append(...boxes);
   input.value = "";
 });
 destroyBtn.addEventListener("click", destroyBoxes);
